@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SnapShare</title>
+    <title>Team Board</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7180a563de.js" crossorigin="anonymous"></script>
     <style>
+        :root {
+                --themecolor: #392f5a; 
+              }
+
+        .one{
+            width: 400px;
+        }
+
+        input[type=username]:focus {
+             border: 3px solid var(--themecolor);}
+
 
         body{
-            background: #c77dff;
+            background: var(--themecolor);
         }
         p{
         display:inline;
@@ -17,7 +28,7 @@
         }
 
         .two{
-            margin: 100px auto;
+            margin: 200px auto;
             display: block;
             font-family: 'Secular One', sans-serif;
             font-size: 50px;
@@ -25,20 +36,21 @@
             width: 400px;
             /* border: 2px solid blue; */
             text-align: center;
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
             border-radius: 10px;
             background: white;
             
         }
+        
         .logo{
             padding-top:40px;
-            color: #5a189a;
+            color: var(--themecolor);
         }
 
         .buts{
             line-height: 28px;
             width: 200px;
-            border: 3px solid #5a189a;
+            border: 3px solid var(--themecolor);
             border-radius: 6px;
             
         }
@@ -48,10 +60,10 @@
             margin-top: 30px;
             font-size: 17px;
             padding: 8px 18px;
-            border: 3px solid #5a189a;
+            border: none;
             border-radius: 6px;
-            background: white;
-            color: #5a189a;
+            background: var(--themecolor);
+            color: white;
         }
     </style>
     
@@ -60,7 +72,7 @@
     <div class="two">
         <div class="logo">
         <i class="fa-solid fa-people-group"></i>
-        <p>Team Meet</p>
+        <p>TeamChat</p>
         <input type="username" placeholder="Username" class="username buts">
         <input type="password" placeholder="Password" class="paser buts">
         <button class="login">Login</button>
